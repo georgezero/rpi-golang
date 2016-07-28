@@ -1,2 +1,5 @@
+# http://pkgs.alpinelinux.org/packages
+# http://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management#Repository_pinning
+
 http://nl.alpinelinux.org/alpine/v3.4/main
 @community http://nl.alpinelinux.org/alpine/v3.4/community
