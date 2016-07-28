@@ -1,4 +1,6 @@
-FROM hypriot/rpi-alpine-scratch
+FROM hypriot/rpi-alpine-scratch:v3.4
+
+COPY repositories /etc/apk/repositories
 
 RUN apk add --no-cache ca-certificates
 
@@ -15,7 +17,7 @@ RUN set -ex \
 		gcc \
 		musl-dev \
 		openssl \
-		go \
+		go@community \
 	\
 	&& export GOROOT_BOOTSTRAP="$(go env GOROOT)" \
 	\
